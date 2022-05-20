@@ -6,6 +6,7 @@ const assertEqual = function(actual, expected) {
         compare = `🟢 Assertion Passed: ${actual} === ${expected}`;
       } else {
         compare = `🛑 Assertion Failed: ${actual} !== ${expected}`;
+        return console.log(compare);
       }
     }
     return console.log(compare);
@@ -22,5 +23,5 @@ const tail = function(words) {
   return newArr;
 };
 
-const result = tail(["Hello", "Jello", "Lighthouse", "Labs"]);
+const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
