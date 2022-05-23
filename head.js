@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// head function, find index 0 of array
+// head function, return index 0
 const head = function(actual) {
   return actual[0];
 };
