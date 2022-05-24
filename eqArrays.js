@@ -7,16 +7,16 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function(actual, expected) {
-if (actual.length === expected.length) {
+  if (actual.length === expected.length) {
     for (let i = 0; i < expected.length; i++) {
       if (actual[i] === expected[i]) {
       } else {
-        return false
+        return false;
       }
     }
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
 };
 
