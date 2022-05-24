@@ -21,23 +21,29 @@ const assertArrayEqual = function(actual, expected) {
 };
 
 const without = function(source, itemsToRemove) {
-  console.log({source, itemsToRemove});
-  let newArr = [];
-  console.log(newArr);
-  for (let i = 0; i < itemsToRemove.length; i++){
-    console.log(itemsToRemove[i]);
-    for (let j = 0; j < source.length; j++){
-      console.log(source[j]);
-      if (source[j] === itemsToRemove[i]) {
-        console.log(`${source[j]} === ${itemsToRemove}`)
-      } else {
-        console.log(`${source[j]} !== ${itemsToRemove}`)
-        newArr.push(source[j]);
+  //  console.log({ source, itemsToRemove });
+  let actualItemsArr = [];
+  let resultArr = [];
+  for (const inside of source) {
+    //  console.log(inside);
+    for (const item of itemsToRemove) {
+      //   console.log(item);
+      if (inside === item) {
+        //  console.log(`${inside} === ${item}`);
+        actualItemsArr.push(item);
       }
     }
+    //    console.log({ inside, actualItemsArr });
+
+    if (inside == actualItemsArr) {
+      //  console.log(inside);
+    } else {
+      //      console.log(inside);
+      resultArr.push(inside);
+    }
   }
-  console.log(newArr)
-  console.log(newArr.length)
+  // console.log({ source, actualItemsArr });
+  console.log(resultArr);
 };
 
 const words = ["hello", "world", "lighthouse"];
