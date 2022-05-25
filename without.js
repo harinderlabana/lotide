@@ -1,4 +1,4 @@
-const eqArrays = function (actual, expected) {
+const eqArrays = function(actual, expected) {
   if (actual.length === expected.length) {
     for (let i = 0; i < expected.length; i++) {
       if (actual[i] === expected[i]) {
@@ -12,7 +12,7 @@ const eqArrays = function (actual, expected) {
   }
 };
 
-const assertArrayEqual = function (actual, expected) {
+const assertArrayEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`🟢 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -21,7 +21,7 @@ const assertArrayEqual = function (actual, expected) {
 };
 
 //create a function to remove items in an array from the source array.
-const without = function (source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   //holds the correct type and value of what can be removed from original array
   let actualItemsArr = [];
 

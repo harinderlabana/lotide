@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🟢 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -7,7 +7,7 @@ const assertEqual = function (actual, expected) {
 };
 
 //function to count letters in a string, passed through
-const countLetters = function (letters) {
+const countLetters = function(letters) {
   //create an empty object to save results
   const results = {};
 

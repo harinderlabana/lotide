@@ -1,4 +1,4 @@
-const eqArrays = function (actual, expected) {
+const eqArrays = function(actual, expected) {
   if (actual.length === expected.length) {
     for (let i = 0; i < expected.length; i++) {
       if (actual[i] === expected[i]) {
@@ -12,7 +12,7 @@ const eqArrays = function (actual, expected) {
   }
 };
 
-const assertArrayEqual = function (actual, expected) {
+const assertArrayEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`🟢 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -21,7 +21,7 @@ const assertArrayEqual = function (actual, expected) {
 };
 
 //function to reiterate array into one single array
-const flatten = function (arr) {
+const flatten = function(arr) {
   console.log(arr);
   //holds the final array
   const result = [];
