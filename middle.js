@@ -20,4 +20,25 @@ const assertArrayEqual = function(actual, expected) {
   }
 };
 
-assertArrayEqual([1,2,3],[1,2,3]);
+const middle = function(arr) {
+  let newArr = [];
+  if (arr.length <= 2) {
+  } else if (arr.length % 2 > 0) {
+    let oddMiddle = Math.floor(arr.length / 2);
+    newArr.push(arr[oddMiddle]);
+  } else {
+    let evenMiddle = arr.length / 2;
+    newArr.push(arr[evenMiddle - 1], arr[evenMiddle]);
+  }
+
+  console.log(newArr);
+};
+
+middle([1]); // => []
+middle([1, 2]); // => []
+
+middle([1, 2, 3]); // => [2]
+middle([1, 2, 3, 4, 5]); // => [3]
+
+middle([1, 2, 3, 4]); // => [2, 3]
+middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
