@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`🟢 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -7,17 +7,15 @@ const assertEqual = function(actual, expected) {
 };
 
 //function to count letters in a string, passed through
-const countLetters = function(letters) {
-
+const countLetters = function (letters) {
   //create an empty object to save results
   const results = {};
 
   //remove all white spaces from the string passed in
-  const str = letters.replace(/ /g,'');
+  const str = letters.replace(/ /g, '');
 
   //loop through new string
   for (const letter of str) {
-
     //counting logic....if a letter exsists already in the new object, add 1 to it
     if (results[letter]) {
       results[letter] += 1;
@@ -31,4 +29,4 @@ const countLetters = function(letters) {
 };
 
 countLetters('LHL');
-countLetters("lighthouse in the house");
+countLetters('lighthouse in the house');
