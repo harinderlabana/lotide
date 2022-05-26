@@ -25,4 +25,24 @@ const assertArrayEqual = function(actual, expected) {
   }
 };
 
-assertArrayEqual([1, 2, 3], [1, 2, 3]);
+const letterPositions = function(sentence) {
+  //holds final result
+  const result = {};
+  //scan through the string
+  for (let i = 0; i < sentence.length; i++) {
+    //do not track empty strings
+    if (sentence[i] !== ' ') {
+      //search for whether this letter has already been logged or not
+      if (result[sentence[i]]) {
+        //if the letter or array already exsists, push new index position into the array.
+        result[sentence[i]].push(i);
+      } else {
+        //if this is the first encounter with the letter, marks its initial position as an array
+        result[sentence[i]] = [i];
+      }
+    }
+  }
+  console.log(result);
+};
+
+letterPositions('lighthouse in the house');
