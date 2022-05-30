@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🟢 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const findKeyByValue = function (obj, value) {
+const findKeyByValue = function(obj, value) {
   //separate keys and values into their own arrays
   const keys = Object.keys(obj);
   const values = Object.values(obj);
