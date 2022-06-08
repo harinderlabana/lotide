@@ -1,5 +1,5 @@
 //function to reiterate array into one single array
-const flatten = function (arr) {
+const flatten = function(arr) {
   //holds the final array
   const result = [];
   //scan through each index //push !objects into array //when at an object loop it out and push each item into final array

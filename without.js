@@ -1,5 +1,5 @@
 //create a function to remove items in an array from the source array.
-const without = function (source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   //holds the correct type and value of what can be removed from original array
   let actualItemsArr = [];
   //holds the final result

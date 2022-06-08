@@ -1,4 +1,5 @@
-const findKeyByValue = function (obj, value) {
+//returns the first Key which contains the given value
+const findKeyByValue = function(obj, value) {
   //separate keys and values into their own arrays
   const keys = Object.keys(obj);
   const values = Object.values(obj);

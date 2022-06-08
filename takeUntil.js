@@ -1,5 +1,5 @@
 //a function that pushes values into a new array until a truthy condition hits
-const takeUntil = function (array, callback) {
+const takeUntil = function(array, callback) {
   //create a new resulting array
   const newArr1 = [];
 

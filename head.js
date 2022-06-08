@@ -1,5 +1,5 @@
 // head function, return index 0
-const head = function (actual) {
+const head = function(actual) {
   return actual[0];
 };
 

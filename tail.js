@@ -1,5 +1,5 @@
 //function that returns everything after index 0 in a new array.
-const tail = function (words) {
+const tail = function(words) {
   const newArr = [];
 
   if (words.length === 1 || words === []) {

@@ -1,4 +1,4 @@
-const countOnly = function (allItems, itemsToCount) {
+const countOnly = function(allItems, itemsToCount) {
   //holds final results
   const result = {};
   //scan through each item of the array passed in
@@ -7,9 +7,9 @@ const countOnly = function (allItems, itemsToCount) {
     if (itemsToCount[item]) {
       result[item]
         ? //if the item is already in the array and another is encountered, add 1
-          (result[item] += 1)
+        (result[item] += 1)
         : //if this is the first time encountering a new item, set its value to 1
-          (result[item] = 1);
+        (result[item] = 1);
     }
   }
   return result;

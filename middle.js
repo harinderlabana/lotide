@@ -1,5 +1,5 @@
 //find the middle of an array  //if its even list both values on each side
-const middle = function (arr) {
+const middle = function(arr) {
   //holds final results
   let result = [];
   //if array is < 2, result will be an empty array

@@ -3,7 +3,7 @@ const eqArrays = require('./eqArrays');
 
 //Returns true if both objects have identical keys with identical values.
 //otherwise you get back a big fat false!
-const eqObjects = function (obj1, obj2) {
+const eqObjects = function(obj1, obj2) {
   //pull keys from object into its own variable as an array
   const arrKey1 = Object.keys(obj1);
   const arrKey2 = Object.keys(obj2);
