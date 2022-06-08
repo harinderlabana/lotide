@@ -36,7 +36,7 @@ The following functions are currently implemented:
 - `without(source, itemsToRemove)`: Returns a new array with items removed from the source array.
 - `takeUntil(array, callback)`: Push each index into a new array until a truthy statement triggers.
 - `letterPosition(sentence)`: Takes in a string and returns an object with index position of all letters.
-- `findKey(object, callback)`:
+- `findKey(object, callback)`: Returns the key for an object matchinh the callback.
 - `findKeyByValue(obj, value)`: Returns the first Key which contains the given value.
 - `countOnly(allItems, itemsToCount)`: Return a count for a specific subset of a collection of items the function takes in.
 - `countLetters(letters)`: Return a count of each of the letters in the string passed in.
