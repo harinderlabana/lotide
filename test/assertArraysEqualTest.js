@@ -1,8 +1,22 @@
-//import assertArraysEqual function
+//head
+const assert = require('chai').assert;
 const assertArraysEqual = require('../assertArraysEqual');
 
-//TEST CODE
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, '3'], [1, 2, 3]);
-assertArraysEqual([1, -2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], []);
+//test code
+describe('#assertArraysEqual', () => {
+  it('returns PASSED', () => {
+    assert.deepEqual(assertArraysEqual([1, 2, 3], [1, 2, 3]));
+  });
+
+  it('returns FAILED', () => {
+    assert.deepEqual(assertArraysEqual([1, 2, '3'], [1, 2, 3]));
+  });
+
+  it('returns FAILED', () => {
+    assert.deepEqual(assertArraysEqual([1, -2, 3], [1, 2, 3]));
+  });
+
+  it('returns FAILED', () => {
+    assert.deepEqual(assertArraysEqual([1, 2, 3], []));
+  });
+});

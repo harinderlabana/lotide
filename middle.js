@@ -16,4 +16,5 @@ const middle = function (arr) {
   return result;
 };
 
+//export function
 module.exports = middle;

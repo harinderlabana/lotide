@@ -12,4 +12,5 @@ const tail = function (words) {
   }
 };
 
+//export function
 module.exports = tail;
