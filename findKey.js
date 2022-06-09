@@ -1,5 +1,5 @@
 //function to find the key for an object matchin the callback
-const findKey = function(object, callback) {
+const findKey = function (object, callback) {
   const keys = Object.keys(object);
   const values = Object.values(object);
   //scan the values array for the value being passed through
@@ -9,5 +9,5 @@ const findKey = function(object, callback) {
     }
   }
 };
-
+//export function
 module.exports = findKey;
